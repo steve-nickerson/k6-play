@@ -1,0 +1,68 @@
+
+          /\      |‾‾| /‾‾/   /‾‾/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ‾‾\  
+   /          \   |  |\  \ |  (‾)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: -
+     output: json(stdout)
+
+  scenarios: (100.00%) 1 scenario, 1 max VUs, 10m30s max duration (incl. graceful stop):
+           * default: 1 iterations for each of 1 VUs (maxDuration: 10m0s, gracefulStop: 30s)
+
+{"type":"Metric","data":{"name":"http_reqs","type":"counter","contains":"default","tainted":null,"thresholds":[],"submetrics":null,"sub":{"name":"","parent":"","suffix":"","tags":null}},"metric":"http_reqs"}
+{"type":"Point","data":{"time":"2021-11-04T22:27:23.1832503Z","value":1,"tags":{"expected_response":"true","group":"","method":"GET","name":"https://test.k6.io","proto":"HTTP/1.1","scenario":"default","status":"200","tls_version":"tls1.2","url":"https://test.k6.io"}},"metric":"http_reqs"}
+{"type":"Metric","data":{"name":"http_req_duration","type":"trend","contains":"time","tainted":null,"thresholds":[],"submetrics":null,"sub":{"name":"","parent":"","suffix":"","tags":null}},"metric":"http_req_duration"}
+{"type":"Point","data":{"time":"2021-11-04T22:27:23.1832503Z","value":78.8637,"tags":{"expected_response":"true","group":"","method":"GET","name":"https://test.k6.io","proto":"HTTP/1.1","scenario":"default","status":"200","tls_version":"tls1.2","url":"https://test.k6.io"}},"metric":"http_req_duration"}
+{"type":"Metric","data":{"name":"http_req_blocked","type":"trend","contains":"time","tainted":null,"thresholds":[],"submetrics":null,"sub":{"name":"","parent":"","suffix":"","tags":null}},"metric":"http_req_blocked"}
+{"type":"Point","data":{"time":"2021-11-04T22:27:23.1832503Z","value":451.9971,"tags":{"expected_response":"true","group":"","method":"GET","name":"https://test.k6.io","proto":"HTTP/1.1","scenario":"default","status":"200","tls_version":"tls1.2","url":"https://test.k6.io"}},"metric":"http_req_blocked"}
+{"type":"Metric","data":{"name":"http_req_connecting","type":"trend","contains":"time","tainted":null,"thresholds":[],"submetrics":null,"sub":{"name":"","parent":"","suffix":"","tags":null}},"metric":"http_req_connecting"}
+{"type":"Point","data":{"time":"2021-11-04T22:27:23.1832503Z","value":74.0695,"tags":{"expected_response":"true","group":"","method":"GET","name":"https://test.k6.io","proto":"HTTP/1.1","scenario":"default","status":"200","tls_version":"tls1.2","url":"https://test.k6.io"}},"metric":"http_req_connecting"}
+{"type":"Metric","data":{"name":"http_req_tls_handshaking","type":"trend","contains":"time","tainted":null,"thresholds":[],"submetrics":null,"sub":{"name":"","parent":"","suffix":"","tags":null}},"metric":"http_req_tls_handshaking"}
+{"type":"Point","data":{"time":"2021-11-04T22:27:23.1832503Z","value":188.5168,"tags":{"expected_response":"true","group":"","method":"GET","name":"https://test.k6.io","proto":"HTTP/1.1","scenario":"default","status":"200","tls_version":"tls1.2","url":"https://test.k6.io"}},"metric":"http_req_tls_handshaking"}
+{"type":"Metric","data":{"name":"http_req_sending","type":"trend","contains":"time","tainted":null,"thresholds":[],"submetrics":null,"sub":{"name":"","parent":"","suffix":"","tags":null}},"metric":"http_req_sending"}
+{"type":"Point","data":{"time":"2021-11-04T22:27:23.1832503Z","value":0.1043,"tags":{"expected_response":"true","group":"","method":"GET","name":"https://test.k6.io","proto":"HTTP/1.1","scenario":"default","status":"200","tls_version":"tls1.2","url":"https://test.k6.io"}},"metric":"http_req_sending"}
+{"type":"Metric","data":{"name":"http_req_waiting","type":"trend","contains":"time","tainted":null,"thresholds":[],"submetrics":null,"sub":{"name":"","parent":"","suffix":"","tags":null}},"metric":"http_req_waiting"}
+{"type":"Point","data":{"time":"2021-11-04T22:27:23.1832503Z","value":78.5972,"tags":{"expected_response":"true","group":"","method":"GET","name":"https://test.k6.io","proto":"HTTP/1.1","scenario":"default","status":"200","tls_version":"tls1.2","url":"https://test.k6.io"}},"metric":"http_req_waiting"}
+{"type":"Metric","data":{"name":"http_req_receiving","type":"trend","contains":"time","tainted":null,"thresholds":[],"submetrics":null,"sub":{"name":"","parent":"","suffix":"","tags":null}},"metric":"http_req_receiving"}
+{"type":"Point","data":{"time":"2021-11-04T22:27:23.1832503Z","value":0.1622,"tags":{"expected_response":"true","group":"","method":"GET","name":"https://test.k6.io","proto":"HTTP/1.1","scenario":"default","status":"200","tls_version":"tls1.2","url":"https://test.k6.io"}},"metric":"http_req_receiving"}
+{"type":"Metric","data":{"name":"http_req_failed","type":"rate","contains":"default","tainted":null,"thresholds":[],"submetrics":null,"sub":{"name":"","parent":"","suffix":"","tags":null}},"metric":"http_req_failed"}
+{"type":"Point","data":{"time":"2021-11-04T22:27:23.1832503Z","value":0,"tags":{"expected_response":"true","group":"","method":"GET","name":"https://test.k6.io","proto":"HTTP/1.1","scenario":"default","status":"200","tls_version":"tls1.2","url":"https://test.k6.io"}},"metric":"http_req_failed"}
+
+running (00m01.0s), 1/1 VUs, 0 complete and 0 interrupted iterations
+default   [   0% ] 1 VUs  00m01.0s/10m0s  0/1 iters, 1 per VU
+{"type":"Metric","data":{"name":"vus","type":"gauge","contains":"default","tainted":null,"thresholds":[],"submetrics":null,"sub":{"name":"","parent":"","suffix":"","tags":null}},"metric":"vus"}
+{"type":"Point","data":{"time":"2021-11-04T22:27:23.6523705Z","value":1,"tags":null},"metric":"vus"}
+{"type":"Metric","data":{"name":"vus_max","type":"gauge","contains":"default","tainted":null,"thresholds":[],"submetrics":null,"sub":{"name":"","parent":"","suffix":"","tags":null}},"metric":"vus_max"}
+{"type":"Point","data":{"time":"2021-11-04T22:27:23.6523705Z","value":1,"tags":null},"metric":"vus_max"}
+
+running (00m01.5s), 0/1 VUs, 1 complete and 0 interrupted iterations
+default ✓ [ 100% ] 1 VUs  00m01.5s/10m0s  1/1 iters, 1 per VU
+
+     data_received..................: 17 kB 11 kB/s
+     data_sent......................: 511 B 333 B/s
+     http_req_blocked...............: avg=451.99ms min=451.99ms med=451.99ms max=451.99ms p(90)=451.99ms p(95)=451.99ms
+     http_req_connecting............: avg=74.06ms  min=74.06ms  med=74.06ms  max=74.06ms  p(90)=74.06ms  p(95)=74.06ms 
+     http_req_duration..............: avg=78.86ms  min=78.86ms  med=78.86ms  max=78.86ms  p(90)=78.86ms  p(95)=78.86ms 
+       { expected_response:true }...: avg=78.86ms  min=78.86ms  med=78.86ms  max=78.86ms  p(90)=78.86ms  p(95)=78.86ms 
+     http_req_failed................: 0.00% ✓ 0        ✗ 1  
+     http_req_receiving.............: avg=162.2µs  min=162.2µs  med=162.2µs  max=162.2µs  p(90)=162.2µs  p(95)=162.2µs 
+     http_req_sending...............: avg=104.3µs  min=104.3µs  med=104.3µs  max=104.3µs  p(90)=104.3µs  p(95)=104.3µs 
+     http_req_tls_handshaking.......: avg=188.51ms min=188.51ms med=188.51ms max=188.51ms p(90)=188.51ms p(95)=188.51ms
+     http_req_waiting...............: avg=78.59ms  min=78.59ms  med=78.59ms  max=78.59ms  p(90)=78.59ms  p(95)=78.59ms 
+     http_reqs......................: 1     0.652133/s
+     iteration_duration.............: avg=1.53s    min=1.53s    med=1.53s    max=1.53s    p(90)=1.53s    p(95)=1.53s   
+     iterations.....................: 1     0.652133/s
+     vus............................: 1     min=1      max=1
+     vus_max........................: 1     min=1      max=1
+
+{"type":"Metric","data":{"name":"data_sent","type":"counter","contains":"data","tainted":null,"thresholds":[],"submetrics":null,"sub":{"name":"","parent":"","suffix":"","tags":null}},"metric":"data_sent"}
+{"type":"Point","data":{"time":"2021-11-04T22:27:24.1845657Z","value":511,"tags":{"group":"","scenario":"default"}},"metric":"data_sent"}
+{"type":"Metric","data":{"name":"data_received","type":"counter","contains":"data","tainted":null,"thresholds":[],"submetrics":null,"sub":{"name":"","parent":"","suffix":"","tags":null}},"metric":"data_received"}
+{"type":"Point","data":{"time":"2021-11-04T22:27:24.1845657Z","value":16753,"tags":{"group":"","scenario":"default"}},"metric":"data_received"}
+{"type":"Metric","data":{"name":"iteration_duration","type":"trend","contains":"time","tainted":null,"thresholds":[],"submetrics":null,"sub":{"name":"","parent":"","suffix":"","tags":null}},"metric":"iteration_duration"}
+{"type":"Point","data":{"time":"2021-11-04T22:27:24.1845657Z","value":1532.267,"tags":{"group":"","scenario":"default"}},"metric":"iteration_duration"}
+{"type":"Metric","data":{"name":"iterations","type":"counter","contains":"default","tainted":null,"thresholds":[],"submetrics":null,"sub":{"name":"","parent":"","suffix":"","tags":null}},"metric":"iterations"}
+{"type":"Point","data":{"time":"2021-11-04T22:27:24.1845657Z","value":1,"tags":{"group":"","scenario":"default"}},"metric":"iterations"}
