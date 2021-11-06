@@ -4,6 +4,8 @@
 
 [https://k6.io/docs/](https://k6.io/docs/)
 
+[https://k6.io/docs/examples/](https://k6.io/docs/examples/)
+
 ## Suggested execution is via Docker
 
 To get K6 image:

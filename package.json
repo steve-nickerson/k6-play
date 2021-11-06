@@ -1,0 +1,23 @@
+{
+  "name": "k6-play",
+  "version": "1.0.0",
+  "description": "## Docs and how tos",
+  "main": "script-options.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steve-nickerson/k6-play.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steve-nickerson/k6-play/issues"
+  },
+  "homepage": "https://github.com/steve-nickerson/k6-play#readme",
+  "devDependencies": {
+    "@types/k6": "^0.34.3"
+  }
+}
