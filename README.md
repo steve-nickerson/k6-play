@@ -17,9 +17,9 @@ To execute in bash with Docker:
 `docker run -i --rm loadimpact\k6 run - <script.js`
 
 where:
-- --rm is used to remove the container after exit
-- \- is used to pass an empty name to input
-- \-<script is to redirect the target file script.js as stdin
+- `--rm` is used to remove the container after exit
+- `\-` is used to pass an empty name to input
+- `\-<script` is to redirect the target file `script.js` as stdin
 
 To execute via CLI:
 
@@ -30,8 +30,8 @@ To execute in Windows PowerShell with Docker
 `PS C:\> cat script.js | docker run -i --tm loadimpact/k6 run -`
 
 where:
-- cat is used to pipe content into the container as stdin
-- \- is used to pass an empty name to input
+- `cat` is used to pipe content into the container as stdin
+- `\-` is used to pass an empty name to input
 
 ## Project organization
 
